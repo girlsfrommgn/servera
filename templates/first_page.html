@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+    body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+    background-color: #ffcbbb; /* Green */
+    color: #1C3983;
+  }
+  .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #1C3983;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1C3983 !important;
+  }
+  </style>
+</head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top  bg-1">
+        <a class="navbar-brand " href="#">StudentMap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">(current)</span></a>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link " href="#">Вузы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Статистика</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" >О нас</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Справка</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right bg-1">
+            <form class="form-inline  ">
+              <button class="btn btn-outline-primary" type="button" style="background-color:#ffcbbb; color: #1C3983;">Вход</button>
+              <button class="btn btn-outline-primary" type="button" style="background-color:#ffcbbb; color: #1C3983;">Регистрация</button>
+            </form>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
