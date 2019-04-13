@@ -7,7 +7,7 @@ app.config['SECRET_KEY'] = 'its_a_girl_power'
 
 @app.route('/')
 @app.route('/first_page')
-def login():
+def main_page():
     return render_template('first_page.html')
 
 
@@ -18,6 +18,10 @@ def registry():
         return redirect('/success')
     return render_template('registration.html', title='Регистрация', form=form)
 
+
+@app.route('/map')
+def map():
+    return render_template('map.html')
 
 
 if __name__ == '__main__':
